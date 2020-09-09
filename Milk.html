@@ -8,19 +8,30 @@
     a {
       text-decoration: none;
     }
+
     h3 {
       text-align: center;
     }
     h1 {
       text-align: center;
       font-size: 30px;
+      animation-duration: 3s; animation-name: rainbowLink; animation-iteration-count: infinite; }
+      @keyframes rainbowLink {
+       0% { color: #ff2a2a; }
+       15% { color: #ff7a2a; }
+       30% { color: #ffc52a; }
+       45% { color: #43ff2a; }
+       60% { color: #2a89ff; }
+       75% { color: #202082; }
+       90% { color: #6b2aff; }
+       100% { color: #e82aff; }
        }
        h4 {
          text-align: center;
        }
        h5{
          text-align: center;
-         color: gray;
+         color: lightgray;
          font-size: 15px;
        }
        h6{
@@ -36,35 +47,151 @@ li {
     list-style-type: none;
     text-align: center;
 }
+.button {
+    position: absolute;
+    top: 50%;
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+details summary::-webkit-details-marker {
+    background: url(이미지경로) center no-repeat;
+    color: transparent;
+}
+details[open] summary::-webkit-details-marker {
+    background: url(이미지경로) center no-repeat;
+    color: transparent;
+}
+
+a:hover, a:focus { animation-duration: 3s; animation-name: rainbowLink; animation-iteration-count: infinite; }
+@keyframes rainbowLink {
+ 0% { color: #ff2a2a; }
+ 15% { color: #ff7a2a; }
+ 30% { color: #ffc52a; }
+ 45% { color: #43ff2a; }
+ 60% { color: #2a89ff; }
+ 75% { color: #202082; }
+ 90% { color: #6b2aff; }
+ 100% { color: #e82aff; }
+}
+
+
   </style>
+
+
+
+
 </head>
 
 <body>
-  <h1>우유에 대해서 알아보자</h1>
-<img src="data:image/jpeg;base64,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" alt="우유처럼 생겼다" class="center">
-<h3 style="color:lightgray">우유는 암소의 젖이다. 대략적으로 물 87%, 지방 4%, 단백질 3.5%, 유당 5%, 미네랄 0.7% 정도의 성분이 콜로이드 형태로 구성되어 있다.</h3>
-<h4 style="color:gray">ㅣ우유의 종류ㅣ</h4>
+  <input type="button" name="" value="눈 보호" onclick="
+      document.querySelector('body').style.backgroundColor = '#88c3a3'">
+      <input type="button" name="" value="끄기" onclick="
+          document.querySelector('body').style.backgroundColor = 'white'">
+
+  <h1 style="font-size:50px">ㅣ우유에 대해서 알아보자ㅣ</h1>
+<img src="data:image/jpeg;base64,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" alt="우유처럼 생겼다" class="center" width="20%">
+<h4 style="color:gray;line-height:1px">ㅣ우유란?ㅣ</h4>
+<h5 style="color:lightgray;line-height:1px;font-size:13px;">What is Milk?</h5>
+<h3 style="color:black">우유는 암소의 젖이다.</h3>
+<h4 style="color:gray;line-height:1px;">ㅣ우유의 성분ㅣ</h4>
+<h5 style="color:lightgray;line-height:1px;font-size:13px;">Ingridients of Milk</h5>
+<h3 style="color:black">약 물 87%, 지방 4%, 단백질 3.5%, 유당 5%, 미네랄 0.7% 정도의 성분이 콜로이드 형태로 구성되어 있다.</h3>
+<p style="font-size:5px;color:red;text-align:center;">☞콜로이드: 일반적인 용액이 10-7cm 이하의 용질이 용매에 녹아있는 형태라면, 비교적 큰 입자(10-5cm에서 10-7cm)가 용매에 퍼져 있는 것</p>
+
+<h4 style="color:gray;">ㅣ우유의 종류ㅣ</h4>
+<h5 style="color:lightgray;line-height:1px;font-size:13px;">Types of Milk</h5>
+<h6 style="color:#c4c4c4;line-height:1px;">※각각의 우유를 클릭하면 자세한 설명을 볼 수 있습니다!</h6>
+
 <li>
-  <a href="흰우유.html" target="_blank" title="흰우유에 대한 설명 보러가기" class="black" style="color:black">1. 흰우유</a>
-<br><a href="초코우유.html" target="_blank" title="초코우유에 대한 설명 보러가기" class="brown" style="color:brown">2. 초코우유</a>
-<br><a href="딸기우유.html" target="_blank" title="딸기우유에 대한 설명 보러가기" class="pink" style="color:pink">3. 딸기우유</a>
+  <details style="line-height:17px;">
+  <summary>원유</summary>
+  <p style="font-size:14px;line-height:1px;">말 그대로 소에서 짜낸 직후의 우유. 일반적으로는 품질 관리가 어려워 판매되지 않는다.</p>
+</details>
+
+<br><details style="line-height:17px;">
+<summary>저지방 우유</summary>
+<p style="font-size:14px;line-height:1px;">우유에 함유된 지방 일부를 제거한 우유. 저지방 우유를 먹는다고 딴걸 더 먹으면 당연히 살이 더 찐다!</p>
+</details>
+
+<br><details style="line-height:17px;">
+<summary>무지방 우유</summary>
+<p style="font-size:14px;line-height:1px;">우유를 장기간 보존하기 위해 135~150°C에서 2~5초간 가열하여 일반 실온에서 자랄 수 있는 모든 미생물을 완전히 사멸시키는 초고온 멸균법(UHT)을 사용한 우유.</p>
+</details>
+
+<br><details style="line-height:17px;">
+<summary>연유</summary>
+<p style="font-size:14px;line-height:1px;"><img src="https://post-phinf.pstatic.net/MjAxOTA2MDNfMjkz/MDAxNTU5NTQxODE1NzIy.ptZ-Udm3MFBTaedb_iOVGdMb8Oy57OzvPiNNHy2noBIg.bgPM1JxKRo467uyI19UvBqN2forSYABCMQFgp-eqvWQg.JPEG/190630_%EC%97%B0%EC%9C%A0.jpg?type=w1200"
+   width="15%"><br><br><br><br><br><br><br><br><br><br><br>우유를 농축하여 만든 가공식품.</p>
+   <h5 style="font-size:1.7px">이미지 출처: https://url.kr/8tagor</h5>
+</details>
+
+<br><details style="line-height:17px;">
+<summary>분유</summary>
+<p style="font-size:14px;line-height:1px;"><img src="https://img.hankyung.com/photo/201911/01.20894481.1.jpg" width="20%">
+<br><br><br><br><br><br><br><br><br><br><br>우유의 수분을 증발시켜 가루 형태로 만든 것. 우유보다 긴 시간 보존할 수 있고 작은 공간에 더 많은 양을 저장할 수 있다.</p>
+ <h5 style="font-size:1.7px">이미지 출처: https://url.kr/brXhzJ</h5>
+</details>
 </li>
-<h6 style="color:orange">※각각의 우유를 누르면 자세한 설명을 볼 수 있습니다!</h6>
+
+<br><br><br><br>
+<h4 style="color:gray;line-height:1px;text-align:center">ㅣ우유의 맛ㅣ</h4>
+<h5 style="color:lightgray;line-height:1px;font-size:13px;">Tastes of Milk</h5>
+<h6 style="color:#c4c4c4;line-height:1px;">※각각의 우유를 클릭하면 자세한 설명을 볼 수 있습니다!</h6>
+
+<li>
+  <details style="line-height:17px;">
+  <summary>흰우유</summary>
+  <p style="font-size:14px;line-height:1px;"><img src="https://img.danawa.com/prod_img/500000/616/833/img/3833616_1.jpg?shrink=500:500&_v=20170329122809" width="20%">
+  <br><br><br><br><br><br><br><br><br><br><br>일반적으로 흔히 아는 흰우유다. 우유가 흰색인 이유는 우유 속의 지방구와 단백질 분자가 빛을 산란시키 때문이다.</p>
+
+  </details>
+
+  <br><details style="line-height:17px;">
+  <summary style="color:brown;">초코우유</summary>
+  <p style="font-size:14px;line-height:1px;"><img src="https://www.lottemart.com/images/onlinedescr/images/000173/(%EC%84%9C%EC%9A%B8%EC%9A%B0%EC%9C%A0)%EA%B0%80%EA%B3%B5%EC%9A%B0%EC%9C%A0_%EC%B4%88%EC%BD%94_%EC%B8%A1%EB%A9%B420190819_103739.png" width="20%">
+  <br><br><br><br><br><br><br><br><br><br><br>우유에 코코아나 초콜릿, 당분, 안정제 및 향료 등을 첨가하여 제조한 다갈색의 가공우유다.
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  달고 부드러운 식감 덕에 어린 아이들에게 인기고 흰 우유에 있는 성분을 소화시키지 못하는 등의 이유로 흰 우유를 마시지 못한다는 사람들이 자주 찾는 우유다.</p>
+
+  </details>
+
+  <br><details style="line-height:17px;">
+  <summary style="color:pink;">딸기우유</summary>
+  <p style="font-size:14px;line-height:1px;"><img src="https://www.lottemart.com/images/onlinedescr/images/000173/(%EC%84%9C%EC%9A%B8%EC%9A%B0%EC%9C%A0)%EA%B0%80%EA%B3%B5%EC%9A%B0%EC%9C%A0_%EB%94%B8%EA%B8%B0(%EC%B8%A1%EB%A9%B4)20190819_104231.jpg" width="20%">
+  <br><br><br><br><br><br><br><br><br><br><br>우유에 딸기맛, 향, 색깔을 내는 식품첨가물을 넣어 가공한 우유. 사실 딸기맛 우유라 할 수 있다.
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    딸기가 일정함량 이상 포함되지 않은 식품은 법적으로 딸기향 우유라 표기해야 한다.</p>
+
+  </details>
+
+  <br><p style="color:#0f630c;font-size:14px;">그 외의 우유의 맛들</p>
+   <marquee direction="left" scrollamount="20">아로마니아, 아로마리, 오디, 사과, 바나나, 배 , 라즈베리, 포도, 살구, 자두, 체리, 앵두, 수박, 메론, 키위, 귤, 한라봉, 오렌지, 복숭아, 코코넛, 두리안, 망고, 귀리맛, 사탕수수맛, 캔디맛, 달고나맛, 꿀(물엿, 조청, 올리고당, 설탕), 립톤밀크티, 데자와 밀크티, 홍차, 흑초, 홍초, 민트초코, 코코아, 버터, 밀크앤 쿠키, 커피, 흑당, 카페돌체</marquee>
+
+</li>
 
 
 
+  <br><br><br><br><br><p style="font-size:10px;text-align:center;color:magenta">Made가 아닌 Making now by 로제 (◕‿◕✿)</p>
+  <p style="font-size:5px;text-align:center;">2020.09.10 Ver.1.1.0</p>
+  <h5><a href="https://namu.wiki/w/%EC%9A%B0%EC%9C%A0"target="_blank"title="나무위키"style="color:red;font-size:2px;"
+    >모든 자료의 출처는 이곳입니다</a></h5>
+
+    <div style="text-align:center">
+    <a href=#none id="show" style="color:rgb(0, 241, 255);font-size:10px;" onclick="if(hide.style.display=='none') {hide.style.display='';show.innerText='▲접기'} else {hide.style.display='none';show.innerText='패치노트'}">패치노트</a>
+    <div id="hide" style="display: none">
+  <p style="text-align:center;font-size:10px;color:">
+  <!--여기서부터 패치노트 작성하세요-->
+★2020.09.10★ Ver.1.1.0
+<br>눈 보호 button추가, 콜로이드 정리, details 정리, 우유의 맛 개선, "그외의 맛들" marquee, a 무지개효과 추가, 출처 링크 수정, 패치노트 추가
 
 
+    <!--여기까지 패치노트 작성하세요-->
+</p>
 
 
-<br><br><br><br><br><h5><a href="https://namu.wiki/w/%EC%9A%B0%EC%9C%A0"target="_blank"title="출처로 가서 더욱 자세히 알아보기"style="font-size:5px"
-  >자세한정보는 이곳에서</a></h5>
-  <br><br><br><p style="font-size:5px;text-align:center;color:magenta">Made가 아닌 Making now by 로제 (◕‿◕✿)</p>
-
-
-
-
-
-
+    </div>
+    </div>
 </body>
 </html>
